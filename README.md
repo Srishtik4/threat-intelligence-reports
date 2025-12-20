@@ -1,6 +1,6 @@
-# Threat Intelligence Reports
+# Threat Intelligence Report
 
-This repository contains beginner-friendly threat intelligence reports created
+This repository contains beginner-friendly threat intelligence report created
 as part of my preparation for a cybersecurity research internship.
 
 Each report focuses on understanding real-world cyber attacks through
