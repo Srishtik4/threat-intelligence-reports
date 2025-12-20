@@ -1,21 +1,21 @@
 # WannaCry – Indicators of Compromise (IOCs)
 
-This document lists known Indicators of Compromise associated with the WannaCry ransomware attack.
-These indicators are provided for educational and research purposes only.
+This document lists representative Indicators of Compromise (IOCs) associated with
+the WannaCry ransomware attack analyzed in this repository. These indicators are
+derived from publicly available threat intelligence sources and align with the
+technical analysis presented in the report.
 
 ---
 
-## File Hashes (SHA-256)
+## File Based Indicators
 
-- 84c82835a5d21bbcf75a61706d8ab549dcfc47a8dbdfc7ed6d40bafdbb3d2b30
-- db349b97c37d22f5ea1d1841e3c89eb4a0f5b3f30a5bcb3c9b6c72eebd5b9f45
-
----
-
-## Malicious Domains
-
-- iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea[.]com  
-- ifferfsodp9ifjaposdfjhgosurijfaewrwergwea[.]com
+| Indicator Type | Value | Description |
+|---------------|-------|-------------|
+| Encrypted file extension | `.WCRY` | Extension appended to encrypted files |
+| Ransom note | `@Please_Read_Me@.txt` | Ransom message displayed to victims |
+| Ransom UI | `@WanaDecryptor@.exe` | Graphical ransom interface |
+| Malware executable | `tasksche.exe` | Main WannaCry ransomware binary |
+| Malware executable | `taskdl.exe` | Downloader / support component |
 
 ---
 
@@ -31,6 +31,51 @@ These indicators are provided for educational and research purposes only.
 
 ---
 
+## Vulnerability & Exploitation Indicators
+
+| Indicator | Value |
+|---------|-------|
+| CVE ID | CVE-2017-0144 |
+| Microsoft Patch | MS17-010 |
+| Vulnerable Component | SMBv1 |
+| Affected Systems | Unpatched Windows systems |
+
+---
+
+## Cryptographic Indicators
+
+| Indicator Type | Value |
+|---------------|-------|
+| Symmetric Encryption | AES |
+| Asymmetric Encryption | RSA-2048 |
+| Key Storage | Private key retained by attackers |
+
+---
+
+## Process & Behavioral Indicators
+
+| Indicator | Description |
+|---------|-------------|
+| Execution of `tasksche.exe` | WannaCry ransomware process |
+| Sudden mass file encryption | Rapid encryption of user data |
+| High CPU utilization | Cryptographic operations |
+| Unauthorized service creation | Persistence mechanism |
+| Lateral SMB connections | Worm-like internal spread |
+
+---
+
+## Defensive Use Cases
+
+These indicators may be leveraged for:
+- SIEM correlation rules
+- Endpoint detection alerts
+- Network traffic monitoring
+- Threat hunting exercises
+
+---
+
 ## Notes
 
-These IOCs should be validated before use in production environments.
+- Hash values are excluded due to multiple WannaCry variants.
+- Live malicious domains and IP addresses are intentionally omitted.
+- Refer to VirusTotal and vendor intelligence feeds for validated samples.
