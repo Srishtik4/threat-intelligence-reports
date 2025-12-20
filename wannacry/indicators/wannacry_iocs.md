@@ -21,7 +21,13 @@ These indicators are provided for educational and research purposes only.
 
 ## Network Indicators
 
-- TCP Port 445 (SMB exploitation via MS17-010)
+ Indicator Type | Value | Description |
+|---------------|-------|-------------|
+| Protocol | SMBv1 | Vulnerable Windows file-sharing protocol |
+| Port | TCP 445 | Used for lateral movement and exploitation |
+| Traffic Pattern | SMB scanning | Scanning for vulnerable hosts |
+| Exploit Used | EternalBlue | Remote code execution exploit |
+| Kill-switch behavior | HTTP GET request | Checks availability of a hardcoded domain |
 
 ---
 
