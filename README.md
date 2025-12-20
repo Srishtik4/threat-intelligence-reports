@@ -1,20 +1,14 @@
 # Threat Intelligence Report
 
-This repository contains beginner-friendly threat intelligence report created
-as part of my preparation for a cybersecurity research internship.
-
-Each report focuses on understanding real-world cyber attacks through
-malware behavior analysis, vulnerability exploitation, MITRE ATT&CK mapping,
-and defensive mitigation strategies.
+This repository contains beginner-friendly threat intelligence report.
 
 ---
 
-## 📄 WannaCry Ransomware (2017)
-
-**Description:**  
-Analysis of the WannaCry ransomware attack covering vulnerability exploitation
-(MS17-010 / CVE-2017-0144), malware behavior, MITRE ATT&CK mapping, real-world
-impact, and mitigation strategies.
+## Objectives
+- Understand ransomware behavior
+- Analyze EternalBlue exploitation
+- Map attacker techniques to MITRE ATT&CK
+- Study real-world impact and mitigation strategies
 
 **Contents:**
 - 📘 Threat Intelligence Report (PDF)
