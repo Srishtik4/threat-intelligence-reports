@@ -1,6 +1,6 @@
 # Threat Intelligence Report
 
-This repository contains beginner-friendly threat intelligence report.
+This repository contains beginner-friendly threat intelligence report on WannaCry ransoware attack(2017)
 
 ---
 
